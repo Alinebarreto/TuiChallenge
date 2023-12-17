@@ -51,7 +51,7 @@ Appium Java Client 9.0.0:**
 4. **TestNG 7.8.0:**
 https://mvnrepository.com/artifact/org.testng/testng/7.8.0
 
-<dependency>
+- <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.8.0</version>
@@ -61,7 +61,7 @@ https://mvnrepository.com/artifact/org.testng/testng/7.8.0
 5. **Cucumber TestNG 7.15.0:**
 https://mvnrepository.com/artifact/io.cucumber/cucumber-testng/7.15.0
 
-<dependency>
+- <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
     <version>7.15.0</version>
