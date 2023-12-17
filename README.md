@@ -1,75 +1,74 @@
 # TuiChallenge
 
-Project Setup Guide
-This guide will walk you through the setup process for Appium automation testing with Java, Maven, and Eclipse on Windows.
+# Project Setup Guide
 
-Prerequisites
+## Prerequisites
+
 Ensure you have the following installed on your system:
 
-Java JDK 11:
+1. **Java JDK 11:**
+   - Download and install [Java JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 
-Download and install Java JDK 11: Download Here
-Android Studio:
+2. **Android Studio:**
+   - Download [Android Studio](https://developer.android.com/studio) and note the Android SDK path. Ensure that the APK runs on devices with API levels below 30 (for compatibility with older devices).
 
-Download Android Studio and note the Android SDK path. Ensure that the APK runs on devices with API levels below 30 (for compatibility with older devices): Download Here
-Node:
+3. **Node:**
+   - Download and install [Node](https://nodejs.org/)
 
-Download and install Node: Download Here
-System Variables Configuration
-Set (Java, Android SDK, and Node) Home Paths in Windows System variables.
-Android Studio Configuration
-Open Android Studio and configure the emulator for testing.
-Appium Server Setup
-Install and start the Appium Server via Node:
+## System Variables Configuration
 
-bash
-Copy code
-npm install -g appium@next
-Install the uiautomator2 driver in the terminal:
+1. Set (Java, Android SDK, and Node) Home Paths in Windows System variables.
 
-bash
-Copy code
+## Android Studio Configuration
+
+1. Open Android Studio and configure the emulator for testing.
+
+## Appium Server Setup
+
+1. Install and start the Appium Server via Node:
+   ```bash
+   npm install -g appium@next
+## Install the uiautomator2 driver in the terminal:
 appium driver list
 appium driver install uiautomator2
-Eclipse IDE Setup
-Install Eclipse IDE for Java Developers: Download Here
 
-Create a new Maven project using the maven-archetype-quickstart.
+# Eclipse IDE Setup
 
-In Eclipse, include the following dependencies in the pom.xml file:
+1. **Install Eclipse IDE for Java Developers**
 
-Appium Java Client 9.0.0:
+2. **Create a new Maven project using the maven-archetype-quickstart.**
 
-xml
-Copy code
-<dependency>
+3. **In Eclipse, include the following dependencies in the pom.xml file:
+https://mvnrepository.com/artifact/io.appium/java-client/9.0.0
+
+Appium Java Client 9.0.0:**
+   - <dependency>
     <groupId>io.appium</groupId>
     <artifactId>java-client</artifactId>
     <version>9.0.0</version>
 </dependency>
-More Info
 
-TestNG 7.8.0:
+4. **TestNG 7.8.0:**
+https://mvnrepository.com/artifact/org.testng/testng/7.8.0
 
-xml
-Copy code
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.8.0</version>
 </dependency>
-More Info
 
-Cucumber TestNG 7.15.0:
 
-xml
-Copy code
+5. **Cucumber TestNG 7.15.0:**
+https://mvnrepository.com/artifact/io.cucumber/cucumber-testng/7.15.0
+
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
     <version>7.15.0</version>
 </dependency>
-More Info
 
-Conclusion
+# Conclusion
 Your development environment is now set up for Appium automation testing. Customize your Maven project, write test scripts, and run them on the configured emulator.
+
+
+
